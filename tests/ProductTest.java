@@ -28,7 +28,7 @@ public class ProductTest {
         product.addStock(new SaltySnack());
         product.addStock(new SaltySnack());
 
-        assertEquals(15, product.getSaltySnack(new SaltySnack()));
+        assertEquals(5, product.getSaltySnack(new SaltySnack()));
     }
 
     @Test
@@ -42,7 +42,7 @@ public class ProductTest {
         product.addStock(new SoftDrink());
         product.addStock(new SoftDrink());
 
-        assertEquals(12, product.getSoftDrink(new SoftDrink()));
+        assertEquals(4, product.getSoftDrink(new SoftDrink()));
     }
 
     @Test
@@ -58,7 +58,7 @@ public class ProductTest {
         product.addStock(new Chocolate());
         product.addStock(new Chocolate());
 
-        assertEquals(18, product.getChocolate(new Chocolate()));
+        assertEquals(6, product.getChocolate(new Chocolate()));
     }
 
     @Test

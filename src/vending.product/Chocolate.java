@@ -11,7 +11,7 @@ public class Chocolate extends Product {
     @Override
     public void addStock(Chocolate chocolate) {
         System.out.println("\tadd 1 Chocolate to stock");
-        getAddChocolateCount+=3;
+        getAddChocolateCount+=1;
     }
 
     @Override

@@ -6,9 +6,9 @@ import vending.product.Chocolate;
 import vending.product.SaltySnack;
 
 public class OverloadedVendingMachine {
-    private int softDrinkCount = 3;
-    private int saltySnackCount = 3;
-    private int chocolateCount = 3;
+    private int softDrinkCount = 0;
+    private int saltySnackCount = 0;
+    private int chocolateCount = 0;
 
 
     public void buy(SoftDrink softdrink) {
@@ -46,6 +46,23 @@ public class OverloadedVendingMachine {
 
     }
 
+    public void addStock(SoftDrink softdrink) {
+        System.out.println("\tadd 1 SoftDrink to stock");
+        softDrinkCount += 1;
+    }
+
+    public void addStock(SaltySnack saltySnack) {
+        System.out.println("\tadd 1 SaltySnack to stock");
+        saltySnackCount += 1;
+
+    }
+
+    public void addStock(Chocolate chocolate) {
+        System.out.println("\tadd 1 Chocolate to stock");
+        chocolateCount += 1;
+
+    }
+
     public int buyCount(SoftDrink softdrink) {
         return softDrinkCount;
     }
@@ -64,6 +81,7 @@ public class OverloadedVendingMachine {
         buyProduct.buy(new SaltySnack());
         buyProduct.buy(new Chocolate());
         buyProduct.buy(new SoftDrink());
+        buyProduct.buy(new Chocolate());
 
 
     }

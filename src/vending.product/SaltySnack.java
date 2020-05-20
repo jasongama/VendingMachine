@@ -11,7 +11,7 @@ public class SaltySnack extends Product{
     @Override
     public void addStock(SaltySnack saltySnack) {
         System.out.println("\tadd 1 SaltySnack to stock");
-        getAddSaltySnackCount+=3;
+        getAddSaltySnackCount+=1;
     }
 
     @Override

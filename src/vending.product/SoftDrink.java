@@ -11,7 +11,7 @@ public class SoftDrink extends Product {
     @Override
     public void addStock(SoftDrink softdrink) {
         System.out.println("\tadd 1 SoftDrink to stock");
-        getAddSoftDrinkStockCount+=3;
+        getAddSoftDrinkStockCount+=1;
 
     }
 
